@@ -58,11 +58,6 @@ $topbar-breakpoint: $small-screen;
 $print: "print";
 $no-print: "false";
 
-// Assign devices to sizes
-$tablet: $small;
-$desktop: $medium;
-$widescreen: $large;
-
 // Need to define IE variables for the respond-to mixin
 $ie10: ".ie10";
 $ie9: ".lt-ie10";
@@ -131,7 +126,7 @@ $default-float: left;
 
 // $body-bg: #fff;
 $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 

@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 17, ../../../../../Users/marlene/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,7 +63,91 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 10, ../sass/global/_extends.scss */
+.element-invisible {
+  display: none;
+}
+
+/* line 170, ../sass/global/_extends.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 173, ../sass/global/_extends.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 178, ../sass/global/_extends.scss */
+.phone-number {
+  font-weight: bold;
+}
+
+/* line 187, ../sass/global/_extends.scss */
+a.email,
+.email a {
+  font-weight: bold;
+}
+
+/* line 196, ../sass/global/_extends.scss */
+.no-bullet {
+  margin: 0;
+}
+
+/* line 1, ../sass/base/html/_html.scss */
+body {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+/* line 5, ../sass/base/html/_html.scss */
+h1, h2, h3, h4 {
+  margin-bottom: .5em;
+}
+
+/* line 9, ../sass/base/html/_html.scss */
+h1 {
+  font-size: 2.75em;
+}
+
+/* line 12, ../sass/base/html/_html.scss */
+h2 {
+  font-size: 2.3125em;
+}
+
+/* line 15, ../sass/base/html/_html.scss */
+h3 {
+  font-size: 1.6875em;
+}
+
+/* line 18, ../sass/base/html/_html.scss */
+h4 {
+  font-size: 1.4375em;
+}
+
+/* line 25, ../sass/base/html/_html.scss */
+ol, ul,
+p, code, pre,
+section,
+article {
+  margin-bottom: .75em;
+}
+
+/* line 30, ../sass/base/html/_html.scss */
+ul li {
+  list-style: outside disc;
+  margin: 0 0 0 1.1em;
+}
+
+/* line 36, ../sass/base/html/_html.scss */
+ol li {
+  list-style-type: decimal;
+  margin: 0 0 0 1.41em;
+}
+
+/* No files to import found in base/page/**\/* */
 /* line 2, ../sass/components/_wufoo-form.scss */
 .wufoo-form-container #header {
   display: none;
 }
+
+/* No files to import found in layout/**\/* */
