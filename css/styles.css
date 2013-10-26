@@ -156,8 +156,34 @@ ol li {
 a, a:link, a:visited {
   color: #415aa4;
 }
+@media only screen and (min-width: 48em) {
+  /* line 48, ../sass/base/html/_html.scss */
+  a, a:link, a:visited {
+    text-decoration: none;
+  }
+}
+@media print {
+  /* line 48, ../sass/base/html/_html.scss */
+  a, a:link, a:visited {
+    text-decoration: none;
+  }
+}
+/* line 61, ../sass/global/_mixins.scss */
+.lt-ie9 a, .lt-ie9 a:link, .lt-ie9 a:visited {
+  text-decoration: none;
+}
 
-/* line 55, ../sass/base/html/_html.scss */
+/* line 54, ../sass/base/html/_html.scss */
+a:hover, a:focus, a:active {
+  -webkit-transition: color 10ms;
+  -moz-transition: color 10ms;
+  -o-transition: color 10ms;
+  transition: color 10ms;
+  color: #5a73be;
+  text-decoration: none;
+}
+
+/* line 63, ../sass/base/html/_html.scss */
 img,
 object,
 embed,
@@ -168,8 +194,24 @@ textarea {
 /* No files to import found in base/page/**\/* */
 /* line 1, ../sass/components/_intro.scss */
 #article-intro {
-  margin: 0 auto;
+  margin: 0 auto 1.5em auto;
   width: 90%;
+}
+@media only screen and (min-width: 48em) {
+  /* line 1, ../sass/components/_intro.scss */
+  #article-intro {
+    padding: .5em;
+  }
+}
+@media print {
+  /* line 1, ../sass/components/_intro.scss */
+  #article-intro {
+    padding: .5em;
+  }
+}
+/* line 61, ../sass/global/_mixins.scss */
+.lt-ie9 #article-intro {
+  padding: .5em;
 }
 
 /* line 3, ../sass/components/_main-menu.scss */
@@ -181,9 +223,10 @@ textarea {
 /* line 7, ../sass/components/_main-menu.scss */
 .page-navigation .menu li a {
   display: inline-block;
-  padding: 1em .5em;
+  padding: .5em 1em;
+  text-transform: uppercase;
 }
-/* line 10, ../sass/components/_main-menu.scss */
+/* line 11, ../sass/components/_main-menu.scss */
 .page-navigation .menu li a:first-child {
   padding-left: 0;
 }

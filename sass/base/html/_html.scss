@@ -47,6 +47,14 @@ ol {
 
 a, a:link, a:visited {
   color: $primary-color;
+  @include respond-to($small) {
+    text-decoration: none;
+  }
+}
+a:hover, a:focus, a:active {
+  @include single-transition(color, 10ms);
+  color: lighten($primary-color, 10%);
+  text-decoration: none;
 }
 
 img,

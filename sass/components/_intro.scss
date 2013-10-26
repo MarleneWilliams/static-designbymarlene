@@ -1,4 +1,7 @@
 #article-intro {
-  margin: 0 auto;
+  margin: 0 auto 1.5em auto;
   width: 90%;
+  @include respond-to($small) {
+    padding: .5em;
+  }
 }

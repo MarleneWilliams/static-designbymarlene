@@ -52,8 +52,6 @@ $large: "only screen and (min-width: #{$large-screen})";
 $landscape: "only screen and (orientation: landscape)";
 $portrait: "only screen and (orientation: portrait)";
 
-$topbar-breakpoint: $small-screen;
-
 // Respond-to variables
 $print: "print";
 $no-print: "false";
