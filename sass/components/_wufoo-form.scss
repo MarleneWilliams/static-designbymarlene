@@ -1,5 +1,11 @@
-.wufoo-form-container {
-  #header {
-    display: none;
+.wufoo {
+  li {
+    list-style: none;
+    margin: 0 0 .5em 0;
+  }
+  label {
+    &.desc {
+      display: block;
+    }
   }
 }

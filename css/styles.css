@@ -63,33 +63,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 10, ../sass/global/_extends.scss */
-.element-invisible {
+/* line 11, ../sass/global/_extends.scss */
+.element-invisible,
+.hide {
   display: none;
 }
 
-/* line 170, ../sass/global/_extends.scss */
+/* line 87, ../sass/global/_extends.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 173, ../sass/global/_extends.scss */
+/* line 90, ../sass/global/_extends.scss */
 .italic {
   font-style: italic;
 }
 
-/* line 178, ../sass/global/_extends.scss */
+/* line 95, ../sass/global/_extends.scss */
 .phone-number {
   font-weight: bold;
 }
 
-/* line 187, ../sass/global/_extends.scss */
+/* line 104, ../sass/global/_extends.scss */
 a.email,
 .email a {
   font-weight: bold;
 }
 
-/* line 196, ../sass/global/_extends.scss */
+/* line 113, ../sass/global/_extends.scss */
 .no-bullet {
   margin: 0;
 }
@@ -97,57 +98,104 @@ a.email,
 /* line 1, ../sass/base/html/_html.scss */
 body {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  line-height: 1.2em;
+  padding: 2em;
 }
 
-/* line 5, ../sass/base/html/_html.scss */
+/* line 7, ../sass/base/html/_html.scss */
 h1, h2, h3, h4 {
+  line-height: 1.25em;
   margin-bottom: .5em;
 }
 
-/* line 9, ../sass/base/html/_html.scss */
+/* line 12, ../sass/base/html/_html.scss */
 h1 {
   font-size: 2.75em;
 }
 
-/* line 12, ../sass/base/html/_html.scss */
+/* line 15, ../sass/base/html/_html.scss */
 h2 {
   font-size: 2.3125em;
 }
 
-/* line 15, ../sass/base/html/_html.scss */
+/* line 18, ../sass/base/html/_html.scss */
 h3 {
   font-size: 1.6875em;
 }
 
-/* line 18, ../sass/base/html/_html.scss */
+/* line 21, ../sass/base/html/_html.scss */
 h4 {
   font-size: 1.4375em;
 }
 
 /* line 25, ../sass/base/html/_html.scss */
+article {
+  margin-bottom: 1.5em;
+}
+
+/* line 31, ../sass/base/html/_html.scss */
 ol, ul,
 p, code, pre,
-section,
-article {
+section {
   margin-bottom: .75em;
 }
 
-/* line 30, ../sass/base/html/_html.scss */
+/* line 36, ../sass/base/html/_html.scss */
 ul li {
   list-style: outside disc;
   margin: 0 0 0 1.1em;
 }
 
-/* line 36, ../sass/base/html/_html.scss */
+/* line 42, ../sass/base/html/_html.scss */
 ol li {
   list-style-type: decimal;
   margin: 0 0 0 1.41em;
 }
 
+/* line 48, ../sass/base/html/_html.scss */
+a, a:link, a:visited {
+  color: #415aa4;
+}
+
+/* line 55, ../sass/base/html/_html.scss */
+img,
+object,
+embed,
+textarea {
+  max-width: 100%;
+}
+
 /* No files to import found in base/page/**\/* */
+/* line 1, ../sass/components/_intro.scss */
+#article-intro {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* line 3, ../sass/components/_main-menu.scss */
+.page-navigation .menu li {
+  display: inline;
+  list-style: none;
+  margin: 0;
+}
+/* line 7, ../sass/components/_main-menu.scss */
+.page-navigation .menu li a {
+  display: inline-block;
+  padding: 1em .5em;
+}
+/* line 10, ../sass/components/_main-menu.scss */
+.page-navigation .menu li a:first-child {
+  padding-left: 0;
+}
+
 /* line 2, ../sass/components/_wufoo-form.scss */
-.wufoo-form-container #header {
-  display: none;
+.wufoo li {
+  list-style: none;
+  margin: 0 0 .5em 0;
+}
+/* line 7, ../sass/components/_wufoo-form.scss */
+.wufoo label.desc {
+  display: block;
 }
 
 /* No files to import found in layout/**\/* */
