@@ -9,6 +9,11 @@
 <head>
   <title>Marlene Williams | Design by Marlene</title>
   <link rel="stylesheet" href="css/styles.css">
+
+  <!--[if lt IE 10]>
+  <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
 </head>
 
 <body>
@@ -17,7 +22,7 @@
     <h1 class="logo">Design by Marlene</h1>
     <nav class="page-navigation">
       <ul class="menu">
-        <li><a href="#what-i-do">What I do</a></li>
+        <li><a href="#article-what-i-do">What I do</a></li>
         <li><a href="#">Community</a></li>
         <li><a href="#">Examples</a></li>
         <li><a href="#">Apart from work</a></li>
@@ -33,20 +38,85 @@
   </section>
 
   <section class="page-content">
-    <article>
-      <h2 id="section-what-i-do" class="section-title">What I do</h2>
+    <article id="article-what-i-do">
+      <h2 class="article-title">What I do</h2>
+      <p>I have worked with Drupal since 2007 and have built sites using Drupal 5, 6, and 7. I know how to install and configure Drupal to serve a wide variety of functions. Since I'm not a PHP developer and don't write my own functionality, I have become proficient at selecting and using contributed modules.</p>
+      <p>My favorite website-building tasks, however, involve theming, which is writing and manipulating the code that gives a site its look and feel. A growing part of that is responsive web design, making websites that respond well to the wide variety of modern screen sizes. I enjoy building sites that look good now--on your desktop as well as your phone--and that will be compatible with future technologies.</p>
+      <p>I work well with people, on teams as well as directly with clients. As an independent contractor, I have experience taking a website from the planning stages, through development, and into training and support.</p>
     </article>
-    <article>
-      <h2 id="section-community" class="section-title">Community</h2>
+
+    <article id="article-community">
+      <h2 class="article-title">Community</h2>
+      <p>Blurb here about what I do in the community.</p>
+      <ul>
+        <li>PDX frontend meetups</li>
+        <li>Other Drupal meetups</li>
+        <li>DrupalCons</li>
+        <li>PNW Drupal Summit</li>
+        <li>Frontend conference</li>
+      </ul>
     </article>
-    <article>
-      <h2 id="section-examples" class="section-title">Examples</h2>
+
+    <article id="article-examples">
+      <h2 class="article-title">Examples</h2>
     </article>
-    <article>
-      <h2 id="section-apart-from-work" class="section-title">Apart from work</h2>
+
+    <article id="article-apart-from-work">
+      <h2 class="article-title">Apart from work</h2>
+      <p>I currently live in the beautiful Pacific Northwest. And when I work from home, a cute puppy dog likes to lay on my feet.</p>
     </article>
-    <article>
-      <h2 id="section-contact" class="section-title">Contact</h2>
+
+    <article id="article-contact">
+      <h2 class="article-title">Contact</h2>
+
+      <form id="form1" name="form1" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+            action="https://designbymarlene.wufoo.com/forms/zseci2b1wn94ok/#public">
+        <ul>
+          <li id="foli1" class="notranslate      ">
+            <label class="desc" id="title1" for="Field1">Name<span id="req_1" class="req">*</span></label>
+            <span>
+              <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1" required />
+              <label for="Field1">First</label>
+            </span>
+            <span>
+              <input id="Field2" name="Field2" type="text" class="field text ln" value="" size="14" tabindex="2" required />
+              <label for="Field2">Last</label>
+            </span>
+          </li>
+          <li id="foli3" class="notranslate      ">
+            <label class="desc" id="title3" for="Field3">Email<span id="req_3" class="req">*</span></label>
+            <div>
+              <input id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="3" required /> 
+            </div>
+          </li>
+          <li id="foli4" 
+          class="notranslate      ">
+            <label class="desc" id="title4" for="Field4">Message</label>
+            <div>
+              <textarea id="Field4" 
+              name="Field4" 
+              class="field textarea small" 
+              spellcheck="true" 
+              rows="10" cols="50" 
+              tabindex="4" 
+              onkeyup=""
+               ></textarea>
+            </div>
+          </li>
+          <li class="buttons ">
+            <div>
+              <input id="saveForm" name="saveForm" class="btTxt submit" 
+              type="submit" value="Email me" />
+            </div>
+          </li>
+          <li class="hide">
+            <label for="comment">Do Not Fill This Out</label>
+            <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+            <input type="hidden" id="idstamp" name="idstamp" value="b+AsIHRy/WY3NkzdQMZ1usoAe5g3osdItcG3gzrnGiY=" />
+          </li>
+        </ul>
+      </form>
+
     </article>
   </section>
 
