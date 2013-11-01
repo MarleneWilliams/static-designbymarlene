@@ -1,4 +1,8 @@
 body {
   border-bottom: 1em solid $black;
+  border-top: 1em solid $black;
   // padding: 2em;
+  @include respond-to($small) {
+    border-top: 0 none;
+  }
 }
