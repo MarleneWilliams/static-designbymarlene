@@ -12,20 +12,25 @@
     span {
       &.name-first,
       &.name-last {
-        float: left;
-        margin-bottom: .5em;
-        width: 48%;
         label {
-          color: $gray;
+          color: $gray-light;
           font-style: italic;
           margin-bottom: 1em;
         }
       }
-      &.name-first {
-        margin-right: 2%;
-      }
-      &.name-last {
-        margin-left: 2%;
+      @include respond-to($small) {
+        &.name-first,
+        &.name-last {
+          float: left;
+          margin-bottom: .5em;
+          width: 48%;
+        }
+        &.name-first {
+          margin-right: 2%;
+        }
+        &.name-last {
+          margin-left: 2%;
+        }
       }
     }
   }

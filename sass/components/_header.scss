@@ -5,4 +5,25 @@
     margin-top: 5em;
     text-align: left;
   }
+  // Title / logo
+  .logo {
+    font-family: $logo-font-family;
+    margin-top: .5em;
+    .design {
+      font-size: 1.1em;
+    }
+    .by {
+      font-size: .75em;
+      margin-left: -.5em;
+      position: relative;
+      top: .5em;
+    }
+    .marlene {
+      display: block;
+      font-size: 1.5em;
+    }
+    @include respond-to($small) {
+      margin-top: 0;
+    }
+  }
 }

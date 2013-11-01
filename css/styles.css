@@ -72,6 +72,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Freebooter Script Reg';
+  src: url("../fonts/freebooterscript_regular_macroman/freebooterscript-webfont.eot");
+  src: url("../fonts/freebooterscript_regular_macroman/freebooterscript-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/freebooterscript_regular_macroman/freebooterscript-webfont.woff") format("woff"), url("../fonts/freebooterscript_regular_macroman/freebooterscript-webfont.ttf") format("truetype"), url("../fonts/freebooterscript_regular_macroman/freebooterscript-webfont.svg#freebooter_script_-_altsRg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* line 11, ../sass/global/_extends.scss */
 .element-invisible,
 .hide {
@@ -112,7 +120,7 @@ a.email,
 
 /* line 1, ../sass/base/html/_forms.scss */
 form {
-  font-family: "EB Garamond", serif;
+  font-family: "Questrial", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 1em;
 }
 
@@ -122,19 +130,23 @@ input[type=email],
 input.field,
 textarea {
   border: 1px solid #bfbfbf;
+  box-sizing: border-box;
   padding: .5em;
   width: 100%;
 }
-/* line 13, ../sass/base/html/_forms.scss */
+/* line 14, ../sass/base/html/_forms.scss */
 input[type=text]:focus,
 input[type=email]:focus,
 input.field:focus,
 textarea:focus {
+  -webkit-box-shadow: #e6e6e6 0 0 0.5em 0 inset;
+  -moz-box-shadow: #e6e6e6 0 0 0.5em 0 inset;
+  box-shadow: #e6e6e6 0 0 0.5em 0 inset;
   border-color: black;
   outline: none;
 }
 
-/* line 19, ../sass/base/html/_forms.scss */
+/* line 21, ../sass/base/html/_forms.scss */
 input[type=submit] {
   -webkit-border-radius: none;
   -moz-border-radius: none;
@@ -151,14 +163,21 @@ input[type=submit] {
   font-size: 1em;
   padding: .5em 1em;
 }
-/* line 27, ../sass/base/html/_forms.scss */
+/* line 29, ../sass/base/html/_forms.scss */
 input[type=submit]:hover, input[type=submit]:focus {
-  background-color: #ebebeb;
+  -webkit-box-shadow: #e6e6e6 0 0 0.25em 0;
+  -moz-box-shadow: #e6e6e6 0 0 0.25em 0;
+  box-shadow: #e6e6e6 0 0 0.25em 0;
+  background-color: #f2f2f2;
+}
+/* line 33, ../sass/base/html/_forms.scss */
+input[type=submit]:active {
+  background-color: #f2f2f2;
 }
 
 /* line 1, ../sass/base/html/_html.scss */
 body {
-  font-family: "EB Garamond", serif;
+  font-family: "Questrial", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   line-height: 1.2em;
 }
 
@@ -333,6 +352,43 @@ body {
   margin-top: 5em;
   text-align: left;
 }
+/* line 9, ../sass/components/_header.scss */
+.page-header .logo {
+  font-family: "Freebooter Script Reg", cursive;
+  margin-top: .5em;
+}
+/* line 12, ../sass/components/_header.scss */
+.page-header .logo .design {
+  font-size: 1.1em;
+}
+/* line 15, ../sass/components/_header.scss */
+.page-header .logo .by {
+  font-size: .75em;
+  margin-left: -.5em;
+  position: relative;
+  top: .5em;
+}
+/* line 21, ../sass/components/_header.scss */
+.page-header .logo .marlene {
+  display: block;
+  font-size: 1.5em;
+}
+@media only screen and (min-width: 48em) {
+  /* line 9, ../sass/components/_header.scss */
+  .page-header .logo {
+    margin-top: 0;
+  }
+}
+@media print {
+  /* line 9, ../sass/components/_header.scss */
+  .page-header .logo {
+    margin-top: 0;
+  }
+}
+/* line 61, ../sass/global/_mixins.scss */
+.lt-ie9 .page-header .logo {
+  margin-top: 0;
+}
 
 /* line 1, ../sass/components/_intro.scss */
 #article-intro {
@@ -448,27 +504,59 @@ body {
 .wufoo label.desc {
   display: block;
 }
-/* line 14, ../sass/components/_wufoo-form.scss */
-.wufoo .name span.name-first, .wufoo .name span.name-last {
+/* line 15, ../sass/components/_wufoo-form.scss */
+.wufoo .name span.name-first label, .wufoo .name span.name-last label {
+  color: #bfbfbf;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+@media only screen and (min-width: 48em) {
+  /* line 23, ../sass/components/_wufoo-form.scss */
+  .wufoo .name span.name-first, .wufoo .name span.name-last {
+    float: left;
+    margin-bottom: .5em;
+    width: 48%;
+  }
+  /* line 28, ../sass/components/_wufoo-form.scss */
+  .wufoo .name span.name-first {
+    margin-right: 2%;
+  }
+  /* line 31, ../sass/components/_wufoo-form.scss */
+  .wufoo .name span.name-last {
+    margin-left: 2%;
+  }
+}
+@media print {
+  /* line 23, ../sass/components/_wufoo-form.scss */
+  .wufoo .name span.name-first, .wufoo .name span.name-last {
+    float: left;
+    margin-bottom: .5em;
+    width: 48%;
+  }
+  /* line 28, ../sass/components/_wufoo-form.scss */
+  .wufoo .name span.name-first {
+    margin-right: 2%;
+  }
+  /* line 31, ../sass/components/_wufoo-form.scss */
+  .wufoo .name span.name-last {
+    margin-left: 2%;
+  }
+}
+/* line 23, ../sass/components/_wufoo-form.scss */
+.lt-ie9 .wufoo .name span.name-first, .lt-ie9 .wufoo .name span.name-last {
   float: left;
   margin-bottom: .5em;
   width: 48%;
 }
-/* line 18, ../sass/components/_wufoo-form.scss */
-.wufoo .name span.name-first label, .wufoo .name span.name-last label {
-  color: gray;
-  font-style: italic;
-  margin-bottom: 1em;
-}
-/* line 24, ../sass/components/_wufoo-form.scss */
-.wufoo .name span.name-first {
+/* line 28, ../sass/components/_wufoo-form.scss */
+.lt-ie9 .wufoo .name span.name-first {
   margin-right: 2%;
 }
-/* line 27, ../sass/components/_wufoo-form.scss */
-.wufoo .name span.name-last {
+/* line 31, ../sass/components/_wufoo-form.scss */
+.lt-ie9 .wufoo .name span.name-last {
   margin-left: 2%;
 }
-/* line 32, ../sass/components/_wufoo-form.scss */
+/* line 37, ../sass/components/_wufoo-form.scss */
 .wufoo .email {
   clear: both;
 }

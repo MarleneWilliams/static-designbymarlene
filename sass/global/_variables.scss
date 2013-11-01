@@ -101,6 +101,8 @@ $primary-color: #c700a9; // This is also the link color
 $questrial:   "Questrial", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $avantgarde:  "Avant Garde", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $ebgaramond: "EB Garamond", serif;
+$alexbrush:  "Alex Brush", cursive;
+$freebooter-reg: "Freebooter Script Reg", cursive;
 
 $small-font-size: 80%;
 
@@ -129,11 +131,13 @@ $default-float: left;
 
 // $body-bg: #fff;
 $body-font-color: #222;
-$body-font-family: $ebgaramond;
+$body-font-family: $questrial;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
 $header-font-family: $questrial;
+
+$logo-font-family: $freebooter-reg;
 
 // Font-smoothing
 // $font-smoothing: antialiased;

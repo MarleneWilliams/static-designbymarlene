@@ -8,9 +8,11 @@ input[type=email],
 input.field,
 textarea {
   border: 1px solid $gray-light;
+  box-sizing: border-box;
   padding: .5em;
   width: 100%;
   &:focus {
+    @include box-shadow($gray-lighter 0 0 .5em 0 inset);
     border-color: $black;
     outline: none;
   }
@@ -25,6 +27,10 @@ input[type=submit] {
   font-size: 1em;
   padding: .5em 1em;
   &:hover, &:focus {
-    background-color: lighten($gray-lighter, 2%)
+    @include box-shadow($gray-lighter 0 0 .25em 0);
+    background-color: lighten($gray-lighter, 5%);
+  }
+  &:active {
+    background-color: lighten($gray-lighter, 5%);
   }
 }
