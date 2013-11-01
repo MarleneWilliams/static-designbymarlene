@@ -1,15 +1,37 @@
 .page-navigation {
+  background-color: transparentize($gray-lighter, 0.1);
+  border-bottom: 1px solid transparentize($gray-light, 0.1);
+  border-top: 1px solid transparentize($gray-light, 0.1);
+  margin-bottom: 2em;
+  @include respond-to($small) {
+    border-top: 1em solid $black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
   .menu {
+    @extend %section-layout;
     li {
-      display: inline;
       list-style: none;
       margin: 0;
+      text-align: center;
       a {
-        display: inline-block;
-        padding: .5em 1em;
+        @include text-shadow($white 0 0 .4em);
+        border-bottom: 0;
+        display: block;
+        font-family: $avantgarde;
+        padding: .5em 1.5em;
         text-transform: uppercase;
         &:first-child {
           padding-left: 0;
+        }
+      }
+      // Not-mobile for the menu items
+      @include respond-to($small) {
+        display: inline;
+        a {
+          display: inline-block;
         }
       }
     }

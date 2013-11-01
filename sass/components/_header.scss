@@ -1,0 +1,8 @@
+.page-header {
+  @extend %section-layout;
+  text-align: center;
+  @include respond-to($small) {
+    margin-top: 5em;
+    text-align: left;
+  }
+}
