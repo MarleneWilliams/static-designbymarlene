@@ -165,10 +165,10 @@ input[type=text]:focus,
 input[type=email]:focus,
 input.field:focus,
 textarea:focus {
-  -webkit-box-shadow: #e6e6e6 0 0 0.5em 0 inset;
-  -moz-box-shadow: #e6e6e6 0 0 0.5em 0 inset;
-  box-shadow: #e6e6e6 0 0 0.5em 0 inset;
-  border-color: black;
+  -webkit-box-shadow: #ffc7f7 0 0 0.5em 0 inset;
+  -moz-box-shadow: #ffc7f7 0 0 0.5em 0 inset;
+  box-shadow: #ffc7f7 0 0 0.5em 0 inset;
+  border-color: #94007e;
   outline: none;
 }
 
@@ -191,12 +191,14 @@ input[type=submit] {
 }
 /* line 29, ../sass/base/html/_forms.scss */
 input[type=submit]:hover, input[type=submit]:focus {
-  -webkit-box-shadow: #e6e6e6 0 0 0.25em 0;
-  -moz-box-shadow: #e6e6e6 0 0 0.25em 0;
-  box-shadow: #e6e6e6 0 0 0.25em 0;
-  background-color: #f2f2f2;
+  -webkit-box-shadow: #ffc7f7 0 0 2.75em -0.6em;
+  -moz-box-shadow: #ffc7f7 0 0 2.75em -0.6em;
+  box-shadow: #ffc7f7 0 0 2.75em -0.6em;
+  background-color: #fff5fd;
+  border-color: #ffc7f7;
+  color: #7b0068;
 }
-/* line 33, ../sass/base/html/_forms.scss */
+/* line 35, ../sass/base/html/_forms.scss */
 input[type=submit]:active {
   background-color: #f2f2f2;
 }
