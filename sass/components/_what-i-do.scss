@@ -1,0 +1,16 @@
+#article-what-i-do {
+  @include respond-to($small) {
+    p {
+      &:nth-child(2) {
+        padding-right: 90px;
+      }
+    }
+  }
+  @include respond-to($medium) {
+    p {
+      &:nth-child(3) {
+        padding-right: 90px;
+      }
+    }
+  }
+}

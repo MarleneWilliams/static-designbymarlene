@@ -194,7 +194,7 @@ input[type=submit]:hover, input[type=submit]:focus {
   -webkit-box-shadow: #ffc7f7 0 0 2.75em -0.6em;
   -moz-box-shadow: #ffc7f7 0 0 2.75em -0.6em;
   box-shadow: #ffc7f7 0 0 2.75em -0.6em;
-  background-color: #fff5fd;
+  background-color: #fff0fd;
   border-color: #ffc7f7;
   color: #7b0068;
 }
@@ -296,8 +296,8 @@ textarea {
     display: inline-block;
     width: 100%;
   }
-  /* line 10, ../sass/components/_articles.scss */
-  article article, article#article-intro {
+  /* line 9, ../sass/components/_articles.scss */
+  article article {
     margin-top: 0;
     padding-top: 0;
     display: block;
@@ -312,8 +312,8 @@ textarea {
     display: inline-block;
     width: 100%;
   }
-  /* line 10, ../sass/components/_articles.scss */
-  article article, article#article-intro {
+  /* line 9, ../sass/components/_articles.scss */
+  article article {
     margin-top: 0;
     padding-top: 0;
     display: block;
@@ -327,8 +327,8 @@ textarea {
   display: inline-block;
   width: 100%;
 }
-/* line 10, ../sass/components/_articles.scss */
-.lt-ie9 article article, .lt-ie9 article#article-intro {
+/* line 9, ../sass/components/_articles.scss */
+.lt-ie9 article article {
   margin-top: 0;
   padding-top: 0;
   display: block;
@@ -367,6 +367,18 @@ body {
     margin-top: 5em;
     text-align: left;
   }
+  /* line 8, ../sass/components/_header.scss */
+  .page-header::after {
+    background: transparent url(../images/portrait-1-500-2.jpg) top right no-repeat;
+    content: "";
+    display: block;
+    height: 500px;
+    position: absolute;
+    top: 1em;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+  }
 }
 @media print {
   /* line 1, ../sass/components/_header.scss */
@@ -374,28 +386,52 @@ body {
     margin-top: 5em;
     text-align: left;
   }
+  /* line 8, ../sass/components/_header.scss */
+  .page-header::after {
+    background: transparent url(../images/portrait-1-500-2.jpg) top right no-repeat;
+    content: "";
+    display: block;
+    height: 500px;
+    position: absolute;
+    top: 1em;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+  }
 }
 /* line 61, ../sass/global/_mixins.scss */
 .lt-ie9 .page-header {
   margin-top: 5em;
   text-align: left;
 }
-/* line 9, ../sass/components/_header.scss */
+/* line 8, ../sass/components/_header.scss */
+.lt-ie9 .page-header::after {
+  background: transparent url(../images/portrait-1-500-2.jpg) top right no-repeat;
+  content: "";
+  display: block;
+  height: 500px;
+  position: absolute;
+  top: 1em;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+/* line 21, ../sass/components/_header.scss */
 .page-header .logo {
   font-family: "Respective", cursive;
   margin-top: .5em;
 }
-/* line 12, ../sass/components/_header.scss */
+/* line 24, ../sass/components/_header.scss */
 .page-header .logo .design {
   font-size: 1.75em;
 }
-/* line 15, ../sass/components/_header.scss */
+/* line 27, ../sass/components/_header.scss */
 .page-header .logo .by {
   font-size: 1em;
   position: relative;
   top: .25em;
 }
-/* line 21, ../sass/components/_header.scss */
+/* line 33, ../sass/components/_header.scss */
 .page-header .logo .marlene {
   display: block;
   font-size: 2.5em;
@@ -404,13 +440,13 @@ body {
   top: -0.1em;
 }
 @media only screen and (min-width: 48em) {
-  /* line 9, ../sass/components/_header.scss */
+  /* line 21, ../sass/components/_header.scss */
   .page-header .logo {
     margin-top: 0;
   }
 }
 @media print {
-  /* line 9, ../sass/components/_header.scss */
+  /* line 21, ../sass/components/_header.scss */
   .page-header .logo {
     margin-top: 0;
   }
@@ -423,23 +459,60 @@ body {
 /* line 1, ../sass/components/_intro.scss */
 #article-intro {
   margin: 0 auto 1.5em auto;
-  width: 90%;
 }
 @media only screen and (min-width: 48em) {
   /* line 1, ../sass/components/_intro.scss */
   #article-intro {
-    padding: .5em;
+    border-left: .25em solid black;
+    padding: 0 170px 0 1em;
+    margin: 2em 0;
+    width: auto;
+  }
+  /* line 9, ../sass/components/_intro.scss */
+  #article-intro::before {
+    background: black;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 1em;
   }
 }
 @media print {
   /* line 1, ../sass/components/_intro.scss */
   #article-intro {
-    padding: .5em;
+    border-left: .25em solid black;
+    padding: 0 170px 0 1em;
+    margin: 2em 0;
+    width: auto;
+  }
+  /* line 9, ../sass/components/_intro.scss */
+  #article-intro::before {
+    background: black;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 1em;
   }
 }
 /* line 61, ../sass/global/_mixins.scss */
 .lt-ie9 #article-intro {
-  padding: .5em;
+  border-left: .25em solid black;
+  padding: 0 170px 0 1em;
+  margin: 2em 0;
+  width: auto;
+}
+/* line 9, ../sass/components/_intro.scss */
+.lt-ie9 #article-intro::before {
+  background: black;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 1em;
+}
+/* line 17, ../sass/components/_intro.scss */
+#article-intro .intro-text {
+  font-size: 1.85em;
+  margin: 0;
 }
 
 /* line 1, ../sass/components/_main-menu.scss */
@@ -523,6 +596,39 @@ body {
 /* line 33, ../sass/components/_main-menu.scss */
 .lt-ie9 .page-navigation .menu li a {
   display: inline-block;
+}
+
+@media only screen and (min-width: 48em) {
+  /* line 4, ../sass/components/_what-i-do.scss */
+  #article-what-i-do p:nth-child(2) {
+    padding-right: 90px;
+  }
+}
+@media print {
+  /* line 4, ../sass/components/_what-i-do.scss */
+  #article-what-i-do p:nth-child(2) {
+    padding-right: 90px;
+  }
+}
+/* line 4, ../sass/components/_what-i-do.scss */
+.lt-ie9 #article-what-i-do p:nth-child(2) {
+  padding-right: 90px;
+}
+@media only screen and (min-width: 62.5em) {
+  /* line 11, ../sass/components/_what-i-do.scss */
+  #article-what-i-do p:nth-child(3) {
+    padding-right: 90px;
+  }
+}
+@media print {
+  /* line 11, ../sass/components/_what-i-do.scss */
+  #article-what-i-do p:nth-child(3) {
+    padding-right: 90px;
+  }
+}
+/* line 11, ../sass/components/_what-i-do.scss */
+.lt-ie9 #article-what-i-do p:nth-child(3) {
+  padding-right: 90px;
 }
 
 /* line 2, ../sass/components/_wufoo-form.scss */

@@ -28,7 +28,7 @@ input[type=submit] {
   padding: .5em 1em;
   &:hover, &:focus {
     @include box-shadow(lighten($primary-color, 50%) 0 0 2.75em -.6em);
-    background-color: lighten($primary-color, 59%);
+    background-color: lighten($primary-color, 58%);
     border-color: lighten($primary-color, 50%);
     color: darken($primary-color, 15%);
   }

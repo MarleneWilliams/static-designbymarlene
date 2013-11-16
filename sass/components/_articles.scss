@@ -6,8 +6,7 @@ article {
     display: inline-block;
     width: 100%;
     // Reset for inner articles and specific ones
-    article,
-    &#article-intro {
+    article {
       margin-top: 0;
       padding-top: 0;
       display: block;

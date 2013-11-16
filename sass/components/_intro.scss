@@ -1,7 +1,21 @@
 #article-intro {
   margin: 0 auto 1.5em auto;
-  width: 90%;
+  // width: 90%;
   @include respond-to($small) {
-    padding: .5em;
+    border-left: .25em solid black;
+    padding: 0 170px 0 1em;
+    margin: 2em 0;
+    width: auto;
+    &::before {
+      background: $black;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 1em;
+    }
+  }
+  .intro-text {
+    font-size: 1.85em;
+    margin: 0;
   }
 }
