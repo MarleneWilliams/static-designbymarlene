@@ -1,4 +1,4 @@
-/* line 17, ../../../../../Users/marlene/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../Users/marlene/.rvm/gems/ruby-2.2.0-preview1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Users/marlene/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Users/marlene/.rvm/gems/ruby-2.2.0-preview1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Users/marlene/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Users/marlene/.rvm/gems/ruby-2.2.0-preview1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Users/marlene/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Users/marlene/.rvm/gems/ruby-2.2.0-preview1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Users/marlene/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Users/marlene/.rvm/gems/ruby-2.2.0-preview1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Users/marlene/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Users/marlene/.rvm/gems/ruby-2.2.0-preview1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Users/marlene/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Users/marlene/.rvm/gems/ruby-2.2.0-preview1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Users/marlene/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Users/marlene/.rvm/gems/ruby-2.2.0-preview1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Users/marlene/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Users/marlene/.rvm/gems/ruby-2.2.0-preview1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -237,31 +237,26 @@ h4 {
   font-size: 1.4375em;
 }
 
-/* line 26, ../sass/base/html/_html.scss */
-article {
-  margin-bottom: 2em;
-}
-
-/* line 32, ../sass/base/html/_html.scss */
+/* line 28, ../sass/base/html/_html.scss */
 ol, ul,
 p, code, pre,
 section {
   margin-bottom: .75em;
 }
 
-/* line 37, ../sass/base/html/_html.scss */
+/* line 33, ../sass/base/html/_html.scss */
 ul li {
   list-style: outside disc;
   margin: 0 0 0 1.1em;
 }
 
-/* line 43, ../sass/base/html/_html.scss */
+/* line 39, ../sass/base/html/_html.scss */
 ol li {
   list-style-type: decimal;
   margin: 0 0 0 1.41em;
 }
 
-/* line 49, ../sass/base/html/_html.scss */
+/* line 45, ../sass/base/html/_html.scss */
 a, a:link, a:visited {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -272,14 +267,14 @@ a, a:link, a:visited {
   text-decoration: none;
 }
 
-/* line 57, ../sass/base/html/_html.scss */
+/* line 53, ../sass/base/html/_html.scss */
 a:hover, a:focus, a:active {
   border-bottom: 1px dotted #c700a9;
   color: #e100bf;
   text-decoration: none;
 }
 
-/* line 66, ../sass/base/html/_html.scss */
+/* line 62, ../sass/base/html/_html.scss */
 img,
 object,
 embed,
@@ -287,16 +282,27 @@ textarea {
   max-width: 100%;
 }
 
+/* line 66, ../sass/base/html/_html.scss */
+dt {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
+
+/* line 72, ../sass/base/html/_html.scss */
+dd {
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
 /* No files to import found in base/page/**\/* */
+/* line 1, ../sass/components/_articles.scss */
+article {
+  margin-bottom: 2em;
+}
 @media only screen and (min-width: 48em) {
-  /* line 1, ../sass/components/_articles.scss */
-  article {
-    margin-top: -4em;
-    padding-top: 4em;
-    display: inline-block;
-    width: 100%;
-  }
-  /* line 9, ../sass/components/_articles.scss */
+  /* line 10, ../sass/components/_articles.scss */
   article article {
     margin-top: 0;
     padding-top: 0;
@@ -305,14 +311,7 @@ textarea {
   }
 }
 @media print {
-  /* line 1, ../sass/components/_articles.scss */
-  article {
-    margin-top: -4em;
-    padding-top: 4em;
-    display: inline-block;
-    width: 100%;
-  }
-  /* line 9, ../sass/components/_articles.scss */
+  /* line 10, ../sass/components/_articles.scss */
   article article {
     margin-top: 0;
     padding-top: 0;
@@ -320,14 +319,7 @@ textarea {
     width: auto;
   }
 }
-/* line 61, ../sass/global/_mixins.scss */
-.lt-ie9 article {
-  margin-top: -4em;
-  padding-top: 4em;
-  display: inline-block;
-  width: 100%;
-}
-/* line 9, ../sass/components/_articles.scss */
+/* line 10, ../sass/components/_articles.scss */
 .lt-ie9 article article {
   margin-top: 0;
   padding-top: 0;
