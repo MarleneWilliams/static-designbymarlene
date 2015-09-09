@@ -303,28 +303,52 @@ article {
 }
 @media only screen and (min-width: 48em) {
   /* line 10, ../sass/components/_articles.scss */
-  article article {
-    margin-top: 0;
-    padding-top: 0;
+  article:before {
     display: block;
-    width: auto;
+    content: ' ';
+    margin-top: -4em;
+    height: 4em;
+    visibility: hidden;
+  }
+  /* line 18, ../sass/components/_articles.scss */
+  article#article-intro:before {
+    content: '';
+    display: none;
+    height: 0;
+    margin-top: 0;
   }
 }
 @media print {
   /* line 10, ../sass/components/_articles.scss */
-  article article {
-    margin-top: 0;
-    padding-top: 0;
+  article:before {
     display: block;
-    width: auto;
+    content: ' ';
+    margin-top: -4em;
+    height: 4em;
+    visibility: hidden;
+  }
+  /* line 18, ../sass/components/_articles.scss */
+  article#article-intro:before {
+    content: '';
+    display: none;
+    height: 0;
+    margin-top: 0;
   }
 }
 /* line 10, ../sass/components/_articles.scss */
-.lt-ie9 article article {
-  margin-top: 0;
-  padding-top: 0;
+.lt-ie9 article:before {
   display: block;
-  width: auto;
+  content: ' ';
+  margin-top: -4em;
+  height: 4em;
+  visibility: hidden;
+}
+/* line 18, ../sass/components/_articles.scss */
+.lt-ie9 article#article-intro:before {
+  content: '';
+  display: none;
+  height: 0;
+  margin-top: 0;
 }
 
 /* line 1, ../sass/components/_body.scss */
